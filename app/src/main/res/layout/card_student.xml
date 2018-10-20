@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewStudent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    app:cardCornerRadius="5.0dip"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/frameLayoutStdent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/matColor5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        app:srcCompat="@drawable/id_card" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="bottom|center|left"
+                        android:layout_weight="5"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="cursive"
+                                android:maxLength="21"
+                                android:text="1304079"
+                                android:textAppearance="@android:style/TextAppearance.Material.Medium"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textViewName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:fontFamily="casual"
+                                android:maxLength="21"
+                                android:text="Fahim Abrar"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="18sp" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonStudentEdit"
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:layout_gravity="bottom|center|right"
+                            android:background="@drawable/edit_button_bg_selector"
+                            android:clickable="true" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonStudentDelete"
+                            android:layout_width="24.0dip"
+                            android:layout_height="24.0dip"
+                            android:layout_gravity="bottom|center|right"
+                            android:layout_marginTop="25dip"
+                            android:background="@drawable/delete_button_bg_selector"
+                            android:clickable="true" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

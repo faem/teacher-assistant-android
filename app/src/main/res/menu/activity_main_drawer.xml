@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/backup"
+            android:icon="@drawable/backup"
+            android:title="Backup Database" />
+        <item
+            android:id="@+id/restore"
+            android:icon="@drawable/restore"
+            android:title="Restore Database" />
+        <item
+            android:id="@+id/csv"
+            android:icon="@drawable/folder"
+            android:title="Exported CSV"/>
+    </group>
+
+    <item android:title="more"
+        android:id="@+id/more">
+        <menu>
+            <item
+                android:id="@+id/nav_rating"
+                android:icon="@drawable/rating"
+                android:title="Rate us" />
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/about_us"
+                android:title="About us" />
+        </menu>
+    </item>
+
+</menu>

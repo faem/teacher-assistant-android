@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Teacher Assistant</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_show_record">Records</string>
+    <string name="title_activity_student">StudentActivity</string>
+    <string name="title_activity_add_student">AddStudent</string>
+    <string name="title_activity_edit_student">EditStudent</string>
+    <string name="title_activity_lab">LabActivity</string>
+    <string name="title_activity_edit_student_lab">Edit Student</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

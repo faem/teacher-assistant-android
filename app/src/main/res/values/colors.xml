@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#212121</color>
+    <color name="colorPrimaryDark">#d81b60</color>
+    <color name="colorFab">#2a2a2a</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorAccent">#f9a825</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="linear_bg">#424242</color>
+    <color name="matColor1">#e53935</color>
+    <color name="matColor3">#d81b60</color>
+    <color name="matColor2">#8e24aa</color>
+    <color name="matColor4">#1e88e5</color>
+    <color name="matColor5">#00897b</color>
+    <color name="matColor6">#00c853</color>
+    <color name="matColor7">#ff6d00</color>
+    <color name="matColor10">#d500f9</color>
+    <color name="matColor9">#26c6da</color>
+    <color name="matColor8">#ff1744</color>
+</resources>

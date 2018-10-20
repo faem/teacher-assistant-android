@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/datetime"
+        android:icon="@drawable/calendar"
+        android:orderInCategory="98"
+        android:title="Select Date TIme"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/editattendance"
+        android:icon="@drawable/pencil"
+        android:orderInCategory="98"
+        android:title="Edit Attendance"
+        app:showAsAction="always|withText" />
+
+</menu>

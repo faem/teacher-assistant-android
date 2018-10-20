@@ -1,0 +1,457 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFab"
+    tools:context="net.net23.fahimabrar.teacherassistant.EditStudentLab">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageViewArrowLeftLab"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/left" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/linear_layout_bg"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageViewArrow"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="3dp"
+                            app:srcCompat="@drawable/arrow" />
+
+                        <TextView
+                            android:id="@+id/textViewSubjectName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Student Details"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_student_name_E"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorWhite">
+
+                        <EditText
+                            android:id="@+id/editTextNameLabE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Student Name"
+                            android:singleLine="false"
+                            android:textColor="@color/colorWhite" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_dept_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorWhite">
+
+                        <EditText
+                            android:id="@+id/editTextIDLabE"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="ID"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/linear_layout_bg"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageViewSectionE"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="1dp"
+                            app:srcCompat="@drawable/list" />
+
+                        <TextView
+                            android:id="@+id/selectSectionE"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Lab Work"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorWhite">
+
+                        <EditText
+                            android:id="@+id/editTextLab1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 1"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 2"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 3"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 4"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 5"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 6"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 7"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 8"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 9"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 10"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 11"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 12"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_lab13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/colorWhite"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/editTextLab13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Lab 13"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite"
+                            android:visibility="visible" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/buttonAddNew"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Add new Lab"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/linear_layout_bg"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageViewArrow"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="3dp"
+                            app:srcCompat="@drawable/arrow" />
+
+                        <TextView
+                            android:id="@+id/textViewSubjectName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Other"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_student_name_E"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorWhite">
+
+                        <EditText
+                            android:id="@+id/editTextQuiz"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Quiz"
+                            android:inputType="numberDecimal"
+                            android:singleLine="false"
+                            android:textColor="@color/colorWhite" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/input_layout_dept_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColorHint="@color/colorWhite">
+
+                        <EditText
+                            android:id="@+id/editTextViva"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Viva"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/colorWhite" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageView
+            android:id="@+id/imageViewArrowRightLab"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            app:srcCompat="@drawable/right" />
+
+    </LinearLayout>
+
+</FrameLayout>

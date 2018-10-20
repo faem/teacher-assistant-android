@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFab"
+    tools:context="net.net23.fahimabrar.teacherassistant.AddSubject">
+
+    <include
+        layout="@layout/app_bar_add_subject" />
+
+</FrameLayout>

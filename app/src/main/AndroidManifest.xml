@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.net23.fahimabrar.teacherassistant">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="android.support.multidex.MultiDexApplication">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyBls9EfsWIoJxKg1v4gDVvWQzc9d6YmdW0" />
+            <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+
+
+        </activity>
+        <activity
+            android:name=".AttendanceActivity"
+            android:label="Attendance"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.net23.fahimabrar.teacherassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddSubject"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Add Subject"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutUsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="About Us"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.net23.fahimabrar.teacherassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".EditSubject"
+            android:label="Edit Subject"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShowRecord"
+            android:label="@string/title_activity_show_record"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.net23.fahimabrar.teacherassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".StudentActivity"
+            android:label="Student Info"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.net23.fahimabrar.teacherassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddStudent"
+            android:label="Add Student"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".EditStudent"
+            android:label="Edit Student Info"
+            android:parentActivityName=".StudentActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.net23.fahimabrar.teacherassistant.StudentActivity" />
+        </activity>
+        <activity
+            android:name=".EditStudentLab"
+            android:label="@string/title_activity_edit_student_lab"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="net.net23.fahimabrar.teacherassistant.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="Teacher Assistant"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

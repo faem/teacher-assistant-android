@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView8u"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:clickable="false"
+    app:cardCornerRadius="5.0dip"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="bottom|center|left"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginTop="26.0dip"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2.0dip">
+
+                    <TextView
+                        android:id="@+id/textViewSubjectId"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:text="TextView" />
+
+                    <TextView
+                        android:id="@+id/textViewType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="false"
+                        android:background="#66000000"
+                        android:gravity="center"
+                        android:paddingBottom="2.0dip"
+                        android:paddingLeft="5.0dip"
+                        android:paddingRight="5.0dip"
+                        android:paddingTop="2.0dip"
+                        android:text="Practical"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="#ffffffff" />
+
+                    <TextView
+                        android:id="@+id/textViewSubject"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:maxLength="21"
+                        android:text="Data communication"
+                        android:textAppearance="?android:textAppearanceLarge"
+                        android:textColor="#ffffffff" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="16.0dip"
+                        android:layout_height="16.0dip"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/student" />
+
+                    <TextView
+                        android:id="@+id/textViewSemester"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2.0dip"
+                        android:paddingLeft="2.0dip"
+                        android:text="Details1"
+                        android:textColor="#b2ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="16.0dip"
+                        android:layout_height="16.0dip"
+                        android:layout_margin="2dp"
+                        android:background="@drawable/semester" />
+
+                    <TextView
+                        android:id="@+id/textViewDept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textViewSemester"
+                        android:layout_marginLeft="2.0dip"
+                        android:paddingLeft="2.0dip"
+                        android:text="Details2"
+                        android:textColor="#b2ffffff" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/optionsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/frameLayout"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButtonAttendance"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/attendance_button_bg_selector"
+                android:clickable="true"
+                android:cropToPadding="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <ImageButton
+                android:id="@+id/imageButtonCheck"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageButtonAttendance"
+                android:background="@drawable/check_button_bg_selector"
+                android:clickable="true"
+                android:cropToPadding="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <ImageButton
+                android:id="@+id/imageButtonGraph"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageButtonCheck"
+                android:background="@drawable/graph_button_bg_selector"
+                android:clickable="true" />
+
+            <ImageButton
+                android:id="@+id/imageButtonEdit"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageButtonGraph"
+                android:background="@drawable/edit_button_bg_selector"
+                android:clickable="true" />
+
+            <ImageButton
+                android:id="@+id/imageButtonDelete"
+                android:layout_width="24.0dip"
+                android:layout_height="24.0dip"
+                android:layout_gravity="bottom|center|right"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageButtonEdit"
+                android:background="@drawable/delete_button_bg_selector"
+                android:clickable="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

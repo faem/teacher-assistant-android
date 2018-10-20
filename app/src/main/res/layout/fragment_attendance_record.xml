@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.net23.fahimabrar.teacherassistant.AttendanceRecordFragment"
+    android:orientation="horizontal">
+
+    <!-- TODO: Update blank fragment layout -->
+    <net.net23.fahimabrar.teacherassistant.ObservableScrollView
+        android:id="@+id/scrollview1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/colorFab">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"></HorizontalScrollView>
+    </net.net23.fahimabrar.teacherassistant.ObservableScrollView>
+
+    <net.net23.fahimabrar.teacherassistant.ObservableScrollView
+        android:id="@+id/scrollview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFab">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"></HorizontalScrollView>
+    </net.net23.fahimabrar.teacherassistant.ObservableScrollView>
+
+</LinearLayout>

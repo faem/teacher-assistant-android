@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorFab"
+    tools:context="net.net23.fahimabrar.teacherassistant.AddStudent">
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/linear_layout_bg"
+                android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp">
+
+                    <ImageView
+                        app:srcCompat="@drawable/arrow"
+                        android:id="@+id/imageViewArrow"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="3dp" />
+
+                    <TextView
+                        android:id="@+id/textViewSubjectName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Student Info"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_subject_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/editTextStudentName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Student Name"
+                        android:singleLine="false"
+                        android:textColor="@color/colorWhite" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/input_layout_subject_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColorHint="@color/colorWhite">
+
+                    <EditText
+                        android:id="@+id/editTextID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="ID"
+                        android:singleLine="false"
+                        android:textColor="@color/colorWhite"
+                        android:inputType="numberDecimal"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+</RelativeLayout>
